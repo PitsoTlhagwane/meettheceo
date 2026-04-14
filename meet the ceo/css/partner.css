@@ -1,0 +1,56 @@
+/* PAGE HERO */
+
+.page-hero {
+    width: 100%;
+    padding: 120px 8%;
+    text-align: center;
+    background-image: url("coolbackgrounds-fractalize-bleach.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.page-hero h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    max-width: 600px;
+    margin: auto;
+    color: #555;
+}
+
+/* CONTENT */
+
+.page-content {
+    width: 100%;
+    padding: 80px 8%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.page-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.page-content ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.page-content li {
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+
+.primary-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#2563eb,#1e3a8a);
+    color: white;
+    text-decoration: none;
+}

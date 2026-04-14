@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meet The CEO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+
+<header class="header">
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="blacklogo.png" alt="Meet The CEO Logo">
+        </a>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About Event</a></li>
+
+        <li><a href="ceos.html">CEOs</a></li>
+
+        <li><a href="schedule.html">Schedule</a></li>
+
+        <li><a href="register.html">Register</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+</header>
+
+
+<div class="hero-section">
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="accent-line"></div>
+
+            <h2>MEET<br>THE CEO</h2>
+
+            <p class="hero-subtitle">
+                Leadership Conversations & Executive Networking
+            </p>
+
+            <span>
+                Connect with top executives and industry leaders
+            </span>
+
+            <button class="primary-btn">
+                Register Now
+            </button>
+
+        </div>
+<div class="hero-image">
+
+    <a href="ceo-profile.html" class="image-button">
+
+        <img src="Untitled design.jpg" alt="CEO">
+
+        <div class="image-overlay">
+            VIEW PROFILE
+        </div>
+
+    </a>
+
+</div>
+    </section>
+
+</div>
+
+
+<section class="cta-bar">
+    <div>PARTNER WITH US</div>
+    <div>APPLY TO SPEAK</div>
+    <div>SPEAKERS</div>
+</section>
+
+</div>
+
+</div>
+
+
+<section class="about">
+
+<h2>About The Event</h2>
+
+<p>
+Meet The CEO is a premier leadership engagement platform
+designed to connect professionals, entrepreneurs, and
+aspiring leaders with top executives.
+</p>
+
+</section>
+
+
+<footer>
+
+<h3>Meet The CEO</h3>
+<p>&copy; 2026 Meet The CEO. All rights reserved.</p>
+
+</footer>
+
+<script src="main.js" defer></script>
+
+<script>
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+
+</script>
+
+</body>
+</html>

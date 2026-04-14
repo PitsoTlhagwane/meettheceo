@@ -1,0 +1,215 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* ================= ROOT VARIABLES ================= */
+:root {
+    --accent-blue: #2563eb;
+    --accent-dark: #1e3a8a;
+    --soft-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: system-ui;
+    background: #f4f7ff;
+    color: #111;
+}
+
+/* ================= HEADER ================= */
+.header {
+    width: 100%;
+    background: white;
+}
+
+.header:hover {
+    box-shadow: var(--soft-shadow);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+/* ================= LOGO ================= */
+.logo img {
+    height: 85px;
+    width: auto;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= NAV LINKS ================= */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+    color: var(--accent-blue);
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-blue);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ================= HERO ================= */
+.contact-hero {
+    background-image: url("coolbackgrounds-fractalize-bleach.png");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.contact-hero:hover {
+    filter: brightness(1.03);
+}
+
+.contact-hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    color: #555;
+}
+
+/* ================= CONTACT SECTION ================= */
+.contact-section {
+    padding: 80px 8%;
+}
+
+/* ================= CONTAINER ================= */
+.contact-container {
+    display: flex;
+    gap: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ================= INFO SIDE ================= */
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-item strong {
+    display: block;
+}
+
+/* ================= FORM ================= */
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.contact-form:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--soft-shadow);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+/* ================= FORM GROUP ================= */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* ================= BUTTON ================= */
+.contact-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg,var(--accent-blue),var(--accent-dark));
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(37,99,235,0.3);
+}
+
+.contact-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(37,99,235,0.4);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: white;
+}
+
+footer:hover {
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 768px){
+    .contact-container{
+        flex-direction: column;
+    }
+}

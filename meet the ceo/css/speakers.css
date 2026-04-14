@@ -1,0 +1,39 @@
+/* HERO */
+
+.page-hero {
+    width: 100%;
+    padding: 120px 8%;
+    text-align: center;
+    background-image: url("coolbackgrounds-fractalize-bleach.png");
+    background-size: cover;
+}
+
+/* SPEAKERS GRID */
+
+.speakers-grid {
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 40px;
+}
+
+/* CARD */
+
+.speaker-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.speaker-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.speaker-card h3 {
+    margin-bottom: 5px;
+}

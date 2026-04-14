@@ -1,0 +1,154 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Segoe UI", Arial, sans-serif;
+background:#f4f6fb;
+color:#333;
+}
+
+
+/* MAIN CONTAINER */
+
+.profile-container{
+max-width:1200px;
+margin:80px auto;
+padding:50px;
+background:white;
+border-radius:10px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+
+/* HEADER LAYOUT */
+
+.profile-header{
+display:grid;
+grid-template-columns:250px 1fr;
+gap:50px;
+align-items:center;
+margin-bottom:40px;
+}
+
+
+/* PROFILE IMAGE */
+
+.profile-image img{
+width:250px;
+height:250px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #f1f3f8;
+}
+
+
+/* PROFILE INFO */
+
+.profile-info h1{
+font-size:38px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.profile-info h3{
+font-size:22px;
+color:#2f5bd3;
+margin-bottom:10px;
+}
+
+.company{
+font-size:18px;
+color:#666;
+font-weight:500;
+}
+
+
+/* PROFILE DETAILS GRID */
+
+.profile-details{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-top:30px;
+}
+
+.detail-card{
+background:#f7f9ff;
+padding:20px;
+border-radius:8px;
+}
+
+.detail-card h4{
+margin-bottom:8px;
+color:#2f5bd3;
+}
+
+
+/* SECTIONS */
+
+.profile-section{
+margin-top:50px;
+}
+
+.profile-section h2{
+font-size:24px;
+margin-bottom:15px;
+border-left:4px solid #2f5bd3;
+padding-left:12px;
+}
+
+.profile-section p{
+line-height:1.8;
+margin-bottom:18px;
+color:#444;
+}
+
+.profile-section ul{
+padding-left:25px;
+line-height:1.8;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn{
+display:inline-block;
+margin-top:50px;
+padding:14px 28px;
+background:#2f5bd3;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+transition:0.3s;
+}
+
+.back-btn:hover{
+background:#1e44a6;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+.profile-header{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.profile-image img{
+width:200px;
+height:200px;
+}
+
+.profile-details{
+grid-template-columns:1fr;
+}
+
+}

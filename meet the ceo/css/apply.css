@@ -1,0 +1,40 @@
+/* HERO */
+
+.page-hero {
+    width: 100%;
+    padding: 120px 8%;
+    text-align: center;
+    background-image: url("coolbackgrounds-fractalize-bleach.png");
+    background-size: cover;
+}
+
+.page-hero h1 {
+    font-size: 50px;
+}
+
+/* FORM */
+
+.speaker-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.speaker-form input,
+.speaker-form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.primary-btn {
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg,#2563eb,#1e3a8a);
+    color: white;
+    cursor: pointer;
+}
